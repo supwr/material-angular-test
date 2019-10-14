@@ -2,7 +2,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { PagesComponent } from './pages.component';
-import { HomeComponent } from './home/home.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 
 const routes: Routes = [{
@@ -14,12 +13,8 @@ const routes: Routes = [{
       component: FavoritesComponent,
     },
     {
-      path: 'home',
-      component: HomeComponent,
-    },
-    {
       path: '',
-      redirectTo: 'home',
+      redirectTo: 'favorites',
       pathMatch: 'full',
     },
   ]
